@@ -1,0 +1,385 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Tajawal";
+    overflow-x: hidden;
+    max-width:100%
+}
+
+.to-top {
+    position: fixed;
+    bottom: 150px !important;
+    right:25px !important;
+    z-index: 999;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    background: #43474f;
+    color:#fff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .to-top:hover {
+    color:#fff;
+    text-decoration: none;
+    opacity: .8 !important;
+  }
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+.logo-continer a{
+    padding: 0em 2em;
+}
+.navbar-continer{
+    padding: .3em 0em;
+    display: flex;
+    align-items: center;
+    /* background: #ff5564; */
+    background: #43474f;
+}
+.logo-continer a img{
+    width: 70%;
+}
+.links-continer ul{
+    display: flex;
+    margin: 0px;
+}
+.links-continer ul a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.links-continer ul a:hover li{
+    transform: scale(1.1);
+}
+.links-continer ul a li{
+    margin: 0em 1.5em;
+    list-style-type: none;
+}
+/* header sectoion */
+.header-page{
+    padding: 2em 0em 0em;
+}
+.image-continer{
+    display: flex;
+    justify-content: flex-end;
+}
+.image-continer img{
+    width: 100%;
+}
+.text-continer{
+    padding-left: 5em !important;
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column; */
+}
+.text-continer p{
+    font-size: 20px;
+    width: 80%;
+    padding: 1em 0em;
+    color:  #36383e;
+}
+.text-continer h1{
+    font-size: 34px;
+    font-weight: bold;
+    color: #26292e;
+    line-height: 1.7;
+}
+.get-touch{
+    padding: 1em 0em;
+}
+.get-touch a{
+    background: #ff5564;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 30px;
+}
+.get-touch a:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: .9;
+}
+.mobile-menu{
+    display: none;
+}
+/* about section */
+.about-us-continer{
+}
+.img-about-continer{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-about-continer img{
+    width: 90%;
+}
+.text-about-continer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.tittle-about-continer{
+    padding: 0em 0em 2em;
+}
+.tittle-about-continer h1{
+    text-align: center;
+}
+
+/* services */
+.services-continer{
+    background: #ff5564;
+}
+.services-tittle{
+    color: #fff;
+}
+.services-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .7em 0em;
+    color: #fff;
+}
+.services-box img{
+    width: 130px;
+}
+
+.services-box h1{
+    padding: 1em 0em;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* portifolio section */
+.portifolio-continer, .clients-continer, .about-us-continer, .footer-continer, .services-continer{
+    padding: 3em 2em;
+}
+.portifolio-continer-mobile{
+    display: none;
+}
+.tittle-continer{
+    padding: 0em 0em 4em;
+}
+.tittle-continer h1{
+    text-align: center;
+}
+.portifolio-boxs{
+    display: grid;
+    grid-template-areas:'header header header';
+    grid-gap: 10px;
+}
+.box-port{
+    /* padding: 1em; */
+}
+.box-port img:hover{
+    opacity: .6;
+    transition: 1s;
+    cursor: pointer;
+}
+.box-port{
+    width: 100%;
+    background: #ff5564;
+    margin: .5em 0em;
+    border-radius: 5px;
+}
+.box-port img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* clients section */
+.controls-top{
+    display: flex;
+    justify-content: space-around;
+    padding: 0em 0em 2em;
+}
+.controls-top a i{
+    font-size: 30px;
+}
+/* connect us section */
+
+.connect-us-continer form{
+    padding: 0em 0em 4em;
+}
+.input-continer input{
+    width: 100%;
+}
+.input-continer textarea{
+    width: 100%;
+    height: 200px;
+    margin: 2em 0em;
+}
+.input-continer button{
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    background: #ff5564;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.input-continer button:hover{
+    transform: scale(1.05);
+}
+.footer-continer{
+    background:  #36383e ; 
+    padding: 3em 0em 0em;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0em 3em;
+}
+
+.simple-links ul li, .connects-way ul li{
+    list-style-type: none;
+    color: #fff;
+    font-size: 18px;
+}
+.simple-links ul a:hover, .connects-way ul a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.connects-way ul, .simple-links ul{
+    padding: 0px !important;
+}
+.simple-about{
+    color: #fff;
+}
+.footer-tittles h3{
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0px 0px 1.5em;
+}
+.icons-footer i{
+    color: #fff;
+    font-size: 35px;
+    margin: 20px 0px;
+    margin-right: 10px;
+}
+.icons-footer i:hover{
+    color: #ff5564 ;
+}
+.icons-footer a:hover{
+    text-decoration: none;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    /* background: #26292e; */
+    background: #16d15b;
+    padding: 20px 24px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 8px #26292e;
+}
+.whatsapp i{
+    font-size: 50px;
+    color: #fff;
+}
+.footer-tittles ul a li i {
+    padding: 0px .5em;
+}
+.footer-tittles ul a li{
+    padding: .3em 0em;
+}
+.footer-tittles ul a:hover{
+    text-decoration: none;
+    cursor: unset;
+}
+
+@media screen and (max-width: 640px){
+    .row{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .links-continer ul{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .text-continer{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .text-continer p {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+        padding: 1em 2em;
+    }
+    .text-continer h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .get-touch {
+        text-align: center;
+        margin: 1em 0em 2em;
+    }
+    .header-page{
+        flex-direction: column-reverse;
+    }
+    .image-continer img{
+        padding: 1em 0em;
+    }
+    .logo-continer a{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-continer a img {
+        width: 50%;
+    }
+    .text-about-continer{
+        text-align: center;
+    }
+    .about-continer{
+        flex-direction: column-reverse;
+    }
+    .img-about-continer{
+        padding: 0em 0em 4em;
+    }
+    .portifolio-continer, .clients-continer, .about-us-continer, .footer-continer, .services-continer{
+        padding: 3em 0em;
+    }
+    .footer{
+        text-align: center;
+        padding: 0px;
+    }
+    .footer-tittles h3{
+        margin: 1em 0px .3em;
+    }
+    .simple-links{
+        display: none;
+    }
+    .controls-top{
+        display: none;
+    }
+    .portifolio-continer-mobile{
+        display: block;
+    }
+    .portifolio-continer{
+        display: none;
+    }
+    .portifolio-continer-mobile .tittle-continer{
+        padding: 4em 0em 2em;
+    }
+}
